@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Credit Card Attrition Predictor</title>
+    </head>
+    <body>
+        <h1>Please enter the following details:</h1>
+        <form autocomplete="on" method="post" name="card-attrition-form">
+            <label for="age">Customer Age:</label>
+            <input type="number" id="age" name="age">
+            <br><br>
+            <label for="sex">Sex Assigned at Birth:</label>
+            <select id="sex" name="sex">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+            <br><br>
+            <label for="marital-status">Marital Status:</label>
+            <select id="marital-status" name="marital-status">
+                <option value="0">Single</option>
+                <option value="1">Married</option>
+                <option value="0">Divorced</option>
+            </select>
+            <br><br>
+            <label for="dependants">Number of Dependants:</label>
+            <input type="number" id="dependants" name="dependants">
+            <br><br>
+            <label for="education-level">Highest Level of Education Completed:</label>
+            <select id="education-level" name="education-level">
+                <option value="0">Uneducated</option>
+                <option value="1">High School</option>
+                <option value="2">College</option>
+                <option value="3">Post-Graduate</option>
+                <option value="4">Doctorate</option>
+            </select>
+            <br><br>
+            <label for="income-category">Income Category:</label>
+            <select id="income-category" name="income-category">
+                <option value="1">&lt;$40,000</option>
+                <option value="2">$40,000 - $60,000</option>
+                <option value="3">$60,000 - $80,000</option>
+                <option value="4">$80,000 - $120,000</option>
+                <option value="5">&gt;$120,000</option>
+            </select>
+            <br><br>
+            <label for="card-category">Card Category:</label>
+            <select id="card-category" name="card-category">
+                <option value="1">Blue</option>
+                <option value="2">Silver</option>
+                <option value="3">Gold</option>
+                <option value="4">Platinum</option>
+            </select>
+            <br><br>
+            <label for="affiliated-products">Number of Affiliated Products:</label>
+            <input type="number" id="affiliated-products" name="affiliated-products">
+            <br><br>
+            <label for="inactive-months">Number of Inactive Months (12 months):</label>
+            <input type="number" id="inactive-months" name="inactive-months">
+            <br><br>
+            <label for="contact-count">Number of Times Contacted (12 months):</label>
+            <input type="number" id="contact-count" name="contact-count">
+            <br><br>
+            <label for="credit-limit">Credit Limit:</label>
+            <input type="number" step="0.01" id="credit-limit" name="credit-limit">
+            <br><br>
+            <label for="revolving-balance">Revolving Balance (12 months):</label>
+            <input type="number" step="0.01" id="revolving-balance" name="revolving-balance">
+            <br><br>
+            <label for="open-to-buy-credit">Willingness to Buy Credit (12 months):</label>
+            <input type="number" id="open-to-buy-credit" name="open-to-buy-credit">
+            <br><br>
+            <label for="q4-q1-amt-change">Quarter 4 to Quarter 1 Transaction Amount Change:</label>
+            <input type="number" step="0.01" id="q4-q1-amt-change" name="q4-q1-amt-change">
+            <br><br>
+            <label for="transaction-amount-total">Total Transaction Amount (12 months):</label>
+            <input type="number" step="0.01" id="transaction-amount-total" name="transaction-amount-total">
+            <br><br>
+            <label for="number-of-transactions">Number of Transactions (12 months):</label>
+            <input type="number" id="number-of-transactions" name="number-of-transactions">
+            <br><br>
+            <label for="q4-q1-transactions-change">Quarter 4 to Quarter 1 Transactions Change:</label>
+            <input type="number" id="q4-q1-transactions-change" name="q4-q1-transactions-change">
+            <br><br>
+            <label for="util-ratio">Average Utility Ratio:</label>
+            <input type="number" min="0" max="0.99" step="0.01" id="util-ratio" name="util-ratio">
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
